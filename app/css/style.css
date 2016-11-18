@@ -1,0 +1,19 @@
+body {
+  background-color: #56657F;
+  font-family: 'Conso', Courier New, monospace;
+}
+
+a {
+  color: #5F98FF
+}
+
+.footer {
+  text-align: right;
+}
+
+
+/*google map*/
+#map {
+ height: 80%;
+ width: 100%;
+}
