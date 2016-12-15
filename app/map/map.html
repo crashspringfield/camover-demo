@@ -26,15 +26,24 @@
   <!-- Open info window when clicked -->
   <info-window id="newCamera">
     <div ng-non-bindable="">
-      <form name ="addForm" novalidate>
+      <div style="display:none;" id="thankyou_message">
+        <h2>Thanks for your submission</h2>
+      </div>
+        <!-- <form name ="addForm" id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbzoRSMAZG7NvkV7pqXZQqLeoWHI-d1FpQs4ExQKYM2qzWp5Uwo/exec">
           <div class="form-group">
             <label for="info">Info </label>
-              <textarea name="Text1" cols="40" rows="5" type="text" class="form-control" id="info" placeholder="useful information" ng-model="vm.formData.info"></textarea>
-          </div>
-
-          <!-- Submit button.-->
-          <button type="submit" class="btn btn-danger btn-block" ng-click="vm.createNewCamera()">Add Camera</button>
-      </form>
+              <textarea name="Text1" cols="40" rows="5" type="text" class="form-control" id="info" placeholder="useful information"></textarea>
+          <button class="btn btn-danger btn-block">Add Camera</button>
+        </form> -->
+        <!-- v2 -->
+        <form name ="addForm" novalidate>
+            <div class="form-group">
+              <label for="info">Info </label>
+                <textarea name="info" cols="40" rows="5" type="text" class="form-control" id="info" placeholder="useful information" ng-model="vm.formData.info"></textarea>
+            </div>
+            <!-- Submit button.-->
+            <button type="submit" class="btn btn-danger btn-block" ng-click="vm.createNewCamera()">Add Camera</button>
+        </form>
     </div>
   </info-window>
 

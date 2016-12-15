@@ -18,7 +18,7 @@
 
       // POST new camera to database
       function postCamera(data) {
-        return $http.post('/cameras')
+        return $http.post('https://script.google.com/macros/s/AKfycbzoRSMAZG7NvkV7pqXZQqLeoWHI-d1FpQs4ExQKYM2qzWp5Uwo/exec')
           .then(handleSuccess, handleError('Could not post camera'));
       }
 
